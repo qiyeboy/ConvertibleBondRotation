@@ -67,6 +67,27 @@ public class Main {
             }
         }
 
+        System.out.println("最新低溢价可转债排名前20里，我的低溢价可转债持仓未买入的");
+        for (int i = 0; i < 20; i++) {
+            int isExist = 0;
+            int row = i+1;
+            if (strLastestLowPremium[i][1] != null) {
+                for (int j = 0; j < strMyLowPremium.length; j++) {
+                    if (strMyLowPremium[j][1] != null) {
+                        if (strMyLowPremium[j][0].contains(strLastestLowPremium[i][0]))
+                        {
+                            isExist = 1;
+                        }
+                    }
+                }
+                if (isExist != 0) {
+                    //System.out.println("最新低溢价可转债排名前20已买:" + strLastestLowPremium[i][1]+ "["+row+"]");
+                } else {
+                    System.out.println(strLastestLowPremium[i][0] + strLastestLowPremium[i][1]+ "["+row+"];");
+                }
+            }
+        }
+
         System.out.println("我的低溢价可转债持仓在最新的VIP可转债列表里的排名:");
         for (int i = 0; i < strMyLowPremium.length; i++) {
             int rank = -1;
@@ -187,7 +208,7 @@ public class Main {
             }
         }
 
-        System.out.println("最新双低可转债排名前20里，我的双低可转债转债持仓未买入的:");
+        System.out.println("最新双低可转债排名前20里，我的双低可转债持仓未买入的:");
         for (int i = 0; i < 20; i++) {
             int isExist = 0;
             int row = i+1;
