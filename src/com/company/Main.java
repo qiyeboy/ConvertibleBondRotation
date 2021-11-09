@@ -49,8 +49,7 @@ public class Main {
         excelTools.readExcel(strLastestDoubleLow, "最新双低可转债排名",  2, 0, 2);
         //excelTools.PrintData(strLastestDoubleLow, "strLastestDoubleLow", 0 , strLastestDoubleLow.length, 0, 2);
 
-        System.out.println("------------------我的低溢价可转债持仓在最新的低溢价可转债列表里的排名------------------------------");
-        //我的低溢价可转债持仓在最新的低溢价可转债列表里的排名
+        System.out.println("我的低溢价可转债持仓在最新的低溢价可转债列表里的排名:");
         for (int i = 0; i < strMyLowPremium.length; i++) {
             int rank = -1;
             int row = i+1;
@@ -64,12 +63,11 @@ public class Main {
                     }
                 }
                 //注意：raw是行，实际排名需要-1
-                System.out.println("我的低溢价可转债持仓:" + strMyLowPremium[i][1]+ "["+row+"]" + "在最新的低溢价可转债的排名是" +"["+rank+"]");
+                System.out.println(strMyLowPremium[i][1]+ "["+row+"]" + "在最新低溢价可转债的排名是" +"["+rank+"];");
             }
         }
 
-        System.out.println("------------------我的低溢价可转债持仓在最新的VIP可转债列表里的排名------------------------------");
-        //我的低溢价可转债持仓在最新的VIP可转债列表里的排名
+        System.out.println("我的低溢价可转债持仓在最新的VIP可转债列表里的排名:");
         for (int i = 0; i < strMyLowPremium.length; i++) {
             int rank = -1;
             int row = i+1;
@@ -83,12 +81,11 @@ public class Main {
                     }
                 }
                 //注意：raw是行，实际排名需要-1
-                System.out.println("我的低溢价可转债持仓:" + strMyLowPremium[i][1]+ "["+row+"]" + "在最新的VIP可转债的的排名是" +"["+rank+"]");
+                System.out.println(strMyLowPremium[i][1]+ "["+row+"]" + "在最新VIP可转债的排名是" +"["+rank+"];");
             }
         }
 
-        System.out.println("------------------VIP轮动列表前20里，我的低溢价可转债持仓未买入的------------------------------");
-        //VIP轮动列表前20里，我的低溢价可转债持仓未买入的
+        System.out.println("VIP轮动列表前20里，我的低溢价可转债持仓未买入的:");
         for (int i = 0; i < 20; i++) {
             int isExist = 0;
             int row = i+1;
@@ -104,13 +101,12 @@ public class Main {
                 if (isExist != 0) {
                     //System.out.println("VIP轮动前20已买:" + strVipNew[i][1]+ "["+row+"]");
                 } else {
-                    System.out.println("VIP轮动前20未买:" + strVipNew[i][0] + strVipNew[i][1]+ "["+row+"]");
+                    System.out.println(strVipNew[i][0] + strVipNew[i][1]+ "["+row+"];");
                 }
             }
         }
 
-        System.out.println("------------------VIP轮动列表前30里，我的低溢价可转债持仓未买入的------------------------------");
-        //VIP轮动列表前30里，我的低溢价可转债持仓未买入的
+        System.out.println("VIP轮动列表前30里，我的低溢价可转债持仓未买入的:");
         for (int i = 0; i < 30; i++) {
             int isExist = 0;
             int row = i+1;
@@ -126,13 +122,12 @@ public class Main {
                 if (isExist != 0) {
                     //System.out.println("VIP轮动前30已买:" + strVipNew[i][1]+ "["+row+"]");
                 } else {
-                    System.out.println("VIP轮动前30未买:" + strVipNew[i][0] + strVipNew[i][1]+ "["+row+"]");
+                    System.out.println(strVipNew[i][0] + strVipNew[i][1]+ "["+row+"];");
                 }
             }
         }
 
-        System.out.println("------------------VIP轮动列表前40里，我的低溢价可转债持仓未买入的------------------------------");
-        //VIP轮动列表前40里，我的低溢价可转债持仓未买入的
+        System.out.println("VIP轮动列表前40里，我的低溢价可转债持仓未买入的:");
         for (int i = 0; i < 40; i++) {
             int isExist = 0;
             int row = i+1;
@@ -148,13 +143,12 @@ public class Main {
                 if (isExist != 0) {
                     //System.out.println("VIP轮动前40已买:" + strVipNew[i][1]+ "["+row+"]");
                 } else {
-                    System.out.println("VIP轮动前40未买:" + strVipNew[i][0] + strVipNew[i][1]+ "["+row+"]");
+                    System.out.println(strVipNew[i][0] + strVipNew[i][1]+ "["+row+"];");
                 }
             }
         }
 
-        System.out.println("------------------VIP轮动列表前50里，我的低溢价可转债持仓未买入的------------------------------");
-        //VIP轮动列表前50里，我的低溢价可转债持仓未买入的
+        System.out.println("VIP轮动列表前50里，我的低溢价可转债持仓未买入的:");
         for (int i = 0; i < 50; i++) {
             int isExist = 0;
             int row = i+1;
@@ -170,13 +164,12 @@ public class Main {
                 if (isExist != 0) {
                     //System.out.println("VIP轮动前50已买:" + strVipNew[i][1]+ "["+row+"]");
                 } else {
-                    System.out.println("VIP轮动前50未买:" + strVipNew[i][0] + strVipNew[i][1]+ "["+row+"]");
+                    System.out.println(strVipNew[i][0] + strVipNew[i][1]+ "["+row+"];");
                 }
             }
         }
 
-        System.out.println("------------------我的双低可转债持仓在最新的双低可转债列表里的排名------------------------------");
-        //我的双低可转债持仓在最新的双低可转债列表里的排名
+        System.out.println("我的双低可转债持仓在最新的双低可转债列表里的排名:");
         for (int i = 0; i < strMyDoubleLow.length; i++) {
             int rank = -1;
             int row = i+1;
@@ -190,12 +183,11 @@ public class Main {
                     }
                 }
                 //注意：raw是行，实际排名需要-2
-                System.out.println("我的双低可转债持仓:" + strMyDoubleLow[i][1]+ "["+row+"]" + "的排名是" +"["+rank+"]:");
+                System.out.println(strMyDoubleLow[i][1]+ "["+row+"]" + "在最新双低可转债的排名是" +"["+rank+"];");
             }
         }
 
-        System.out.println("------------------最新双低可转债排名前20里，我的双低可转债转债持仓未买入的------------------------------");
-        //最新双低可转债排名前20里，我的双低可转债转债持仓未买入的
+        System.out.println("最新双低可转债排名前20里，我的双低可转债转债持仓未买入的:");
         for (int i = 0; i < 20; i++) {
             int isExist = 0;
             int row = i+1;
@@ -211,7 +203,7 @@ public class Main {
                 if (isExist != 0) {
                     //System.out.println("最新双低可转债排名前20已买:" + strLastestDoubleLow[i][1]+ "["+row+"]");
                 } else {
-                    System.out.println("最新双低可转债排名前20未买:" + strLastestDoubleLow[i][1]+ "["+row+"]");
+                    System.out.println(strLastestDoubleLow[i][1]+ "["+row+"];");
                 }
             }
         }
